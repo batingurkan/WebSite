@@ -1,0 +1,305 @@
+@{
+    ViewData["Title"] = "Bayibasvuru";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content">
+    <div class="bayi-basvurusu-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text">
+                        <p>
+                            bayi basvurusu
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bayi-basvuru-form">
+        <div class="container">
+            <form class="" action="#" method="post">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text">
+                            <p>
+                                şirket bilgileri
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="sirketAdi" placeholder="Şirket Adı" name="sirketbilgileri[sirketAdi]"
+                                   autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="sirketYetkilisi" placeholder="Şirket Yetkilisi" name="sirketbilgileri[sirketYetkilisi]"
+                                   autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="sirketTelefonNumarasi" placeholder="Telefon" name="sirketbilgileri[sirketTelefonNumarasi]"
+                                   autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="sirketEmailAdres" placeholder="E-Posta" name="sirketbilgileri[sirketEmailAdres]"
+                                   autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="vergiDairesi" placeholder="Vergi Dairesi" name="sirketbilgileri[vergiDairesi]"
+                                   autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="vergiNumarasi" placeholder="Vergi Numarası" name="sirketbilgileri[vergiNumarasi]"
+                                   autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <textarea type="textarea" class="form-control" id="sirketAdres" placeholder="Adres" name="sirketbilgileri[sirketAdres]"
+                                      autocomplete="off"></textarea>
+                        </div>
+                    </div>
+                </div>
+              
+             
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text">
+                            <p>
+                                çalışan araç grupları
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row calisan-arac-grup">
+                    <div class="col-md-2">
+                        <ul>
+                            <label class="form-check-label">
+                                ford
+                                <input type="checkbox" id="ford" name="calisanAracGrupları[]" value="Ford">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                opel
+                                <input type="checkbox" id="opel" name="calisanAracGrupları[]" value="Opel">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                japon kore
+                                <input type="checkbox" id="japonKore" name="calisanAracGrupları[]" value="Japon kore">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                Volkswagen
+                                <input type="checkbox" id="volkswagen" name="calisanAracGrupları[]" value="Volkswagen">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <label class="form-check-label">
+                                Peugeot
+                                <input type="checkbox" id="peugeot" name="calisanAracGrupları[]" value="Peugeot">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                diğer
+                                <input type="checkbox" id="diger" name="calisanAracGrupları[]" value="Diger">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                mercedes
+                                <input type="checkbox" id="mercedes" name="calisanAracGrupları[]" value="Mercedes">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                Renault
+                                <input type="checkbox" id="renault" name="calisanAracGrupları[]" value="Renault">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <label class="form-check-label">
+                                Citroen
+                                <input type="checkbox" id="citroen" name="calisanAracGrupları[]" value="Citroen">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                BMW
+                                <input type="checkbox" id="bmw" name="calisanAracGrupları[]" value="Bmw">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                Fiat
+                                <input type="checkbox" id="fiat" name="calisanAracGrupları[]" value="Fiat">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                Audi
+                                <input type="checkbox" id="audi" name="calisanAracGrupları[]" value="Audi">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <label class="form-check-label">
+                                seat
+                                <input type="checkbox" id="seat" name="calisanAracGrupları[]" value="Seat">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                volvo
+                                <input type="checkbox" id="volvo" name="calisanAracGrupları[]" value="Volvo">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                Iveco
+                                <input type="checkbox" id="iveco" name="calisanAracGrupları[]" value="Iveco">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                kia
+                                <input type="checkbox" id="kia" name="calisanAracGrupları[]" value="Kia">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <label class="form-check-label">
+                                Mazda
+                                <input type="checkbox" id="mazda" name="calisanAracGrupları[]" value="Mazda">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                honda
+                                <input type="checkbox" id="honda" name="calisanAracGrupları[]" value="Honda">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                smart
+                                <input type="checkbox" id="smart" name="calisanAracGrupları[]" value="Smart">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                tofaş
+                                <input type="checkbox" id="tofas" name="calisanAracGrupları[]" value="Tofaş">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <label class="form-check-label">
+                                Saab
+                                <input type="checkbox" id="saab" name="calisanAracGrupları[]" value="Saab">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                Skoda
+                                <input type="checkbox" id="skoda" name="calisanAracGrupları[]" value="Skoda">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                Mini
+                                <input type="checkbox" id="mini" name="calisanAracGrupları[]" value="Mini">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                        <ul>
+                            <label class="form-check-label">
+                                Daihatsu
+                                <input type="checkbox" id="daihatsu" name="calisanAracGrupları[]" value="Daihatsu">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputName" placeholder="Aylık Ortalama Satış Tutarı" name="aylikOrtalamaSatisTutari"
+                                   autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputName" placeholder="Mesajınız" name="mesaj"
+                                   autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="submit" class="basvuru-firma-gonder" name="" value="Gönder">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

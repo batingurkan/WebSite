@@ -1,0 +1,90 @@
+@{
+    ViewData["Title"] = "Iletisim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content">
+    <div class="iletisim-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text">
+                        <p>iletişim</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="iletisim-baslik">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="title">
+                        <h5>uğrayın</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="title">
+                        <h5>mesaj gönderin</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="iletisim-icerik">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="map"><iframe allowfullscreen="" frameborder="0" height="290" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12225.809837996176!2d32.7554201!3d39.9983399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34b27166ab57d%3A0x605f3ebfd3dfb9!2sForza%20Otomotiv!5e0!3m2!1str!2str!4v1677676040326!5m2!1str!2str" style="border:0" width="414"></iframe></div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="iletisim-bilgileri">
+                        <div class="adres">
+                            <div class="icon"></div>
+
+                            <div class="text">
+                                <p>İvedik OSB. MAH. 1548. CAD. NO:52 Yenimahalle/Ankara</p>
+                            </div>
+                        </div>
+
+                        <div class="telefon">
+                            <div class="icon"></div>
+
+                            <div class="text">
+                                <p> 0312 394 5252</p>
+                                <p> 0312 394 5251</p>
+                                <p> 0312 394 5270</p><span>Fax</span>
+                            </div>
+                        </div>
+
+                        <div class="mail">
+                            <div class="icon"></div>
+
+                            <div class="text"><a href="#">info@forzaotomotiv.com</a></div>
+                        </div>
+                    </div>
+                    <a class="yol-tarifi-button" href="#" role="button">yol tarifi al</a>
+                </div>
+
+                <div class="col-md-4">
+                    <form action="info@forzaotomotiv.com" class="iletisim-form" method="post">
+                        <div class="form-group"><input autocomplete="off" class="form-control" id="inputName" name="adsoyad" placeholder="Adınız Soyadınız" type="text" /></div>
+
+                        <div class="form-group"><input autocomplete="off" class="form-control" id="inputEmail" name="email" placeholder="E-Posta Adresiniz " type="email" /></div>
+
+                        <div class="form-group"><input autocomplete="off" class="form-control" id="inputNumber" name="tel" placeholder="Telefon Numaranız" type="tel" /></div>
+
+                        <div class="form-group"><input autocomplete="off" class="form-control" id="inputKonu" name="konu" placeholder="Konu" type="text" /></div>
+
+                        <div class="form-group"><textarea autocomplete="off" class="form-control" id="inputmessage" name="mesaj" placeholder="Mesajınız" type="textarea"></textarea></div>
+                        <button class="iletisim-form-button" type="submit">g&ouml;nder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

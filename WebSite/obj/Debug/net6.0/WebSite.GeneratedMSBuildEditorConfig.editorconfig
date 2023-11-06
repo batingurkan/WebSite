@@ -54,8 +54,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/gurkan/Desktop/WebSite/WebSite/WebSite/Views/Page/Bayibasvuru.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnZS9CYXlpYmFzdnVydS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gurkan/Desktop/WebSite/WebSite/WebSite/Views/Page/Hakkimizda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnZS9IYWtraW1pemRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gurkan/Desktop/WebSite/WebSite/WebSite/Views/Page/Iletisim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnZS9JbGV0aXNpbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/gurkan/Desktop/WebSite/WebSite/WebSite/Views/Page/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gurkan/Desktop/WebSite/WebSite/WebSite/Views/Page/Tedarikcilerimiz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnZS9UZWRhcmlrY2lsZXJpbWl6LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/gurkan/Desktop/WebSite/WebSite/WebSite/Views/Shared/Error.cshtml]

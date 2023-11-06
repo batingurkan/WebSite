@@ -19,4 +19,23 @@ public class PageController : Controller
         var currentPage = await _dataContext.Sayfa.AsNoTracking().Where(s => s.Id == Id).FirstOrDefaultAsync();
         return View(currentPage);
     }
+    
+    public IActionResult Hakkimizda()
+    {
+        return View();
+    }
+    public IActionResult Tedarikcilerimiz()
+    {
+        return View();
+    }
+    public IActionResult Iletisim()
+    {
+        return View();
+    }
+    public IActionResult Bayibasvuru()
+    {
+        return View();
+    }
+
+
 }

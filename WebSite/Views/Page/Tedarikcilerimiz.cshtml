@@ -1,0 +1,225 @@
+@{
+    ViewData["Title"] = "Tedarikciler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content">
+    <div class="tedarikcilerimiz-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text">
+                        <p>
+                            tedarikçilerimiz
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tedarikci-icerik">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-3">
+                    <div id="filters">
+                        <div class="title">
+                            <h5>ürün grupları</h5>
+                        </div>
+                        <ul>
+                            <li>
+                                <label class="form-check-label-2">
+                                    oem yedek parça
+                                    <input type="checkbox" name="oemYedekParca" value=".oemYedekParca"
+                                           id="oemYedekParca">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    Fren
+                                    <input type="checkbox" name="fren" value=".fren" id="fren">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    ön takım süspansiyon
+                                    <input type="checkbox" name="onTakimSuspansiyon" value=".onTakimSuspansiyon"
+                                           id="onTakimSuspansiyon">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+
+
+                                <label class="form-check-label-2">
+                                    soğutma ve ısıtma
+                                    <input type="checkbox" name="sogutmaisitma" value=".sogutmaisitma"
+                                           id="sogutmaisitma">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+
+
+                                <label class="form-check-label-2">
+                                    filtre
+                                    <input type="checkbox" name="filtre" value=".filtre" id="filtre">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    kauçuk aksam
+                                    <input type="checkbox" name="kaucukAksam" value=".kaucukAksam" id="kaucukAksam">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    ateşleme
+                                    <input type="checkbox" name="atesleme" value=".atesleme" id="atesleme">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+
+
+
+
+                                <label class="form-check-label-2">
+                                    aydınlatma
+                                    <input type="checkbox" name="aydinlatma" value=".aydinlatma" id="aydinlatma">
+                                    <span class="checkmark-2"></span>
+                                </label>
+                                <label class="form-check-label-2">
+                                    elektrik
+                                    <input type="checkbox" name="elektrik" value=".elektrik" id="elektrik">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+
+                                <label class="form-check-label-2">
+                                    yağ
+                                    <input type="checkbox" name="yag" value=".yag" id="yag">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    kayış ve rulman
+                                    <input type="checkbox" name="kayisRulman" value=".kayisRulman" id="kayisRulman">
+                                    <span class="checkmark-2"></span>
+                                </label>
+                                <label class="form-check-label-2">
+                                    tel
+                                    <input type="checkbox" name="tel" value=".tel" id="tel">
+                                    <span class="checkmark-2"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="markalar" class="col-md-9 col-xs-9">
+
+                    <div class="item fren onTakimSuspansiyon">
+                        <img src="~/assets-forza1/images/filtron-black.jpg" />
+                    </div>
+                    <div class="item fren onTakimSuspansiyon">
+                        <img src="~/assets-forza1/images/smf-tanitim-filmi-moment2.jpg" />
+                    </div>
+                    <div class="item fren">
+                        <img src="~/assets-forza1/images/mando1.jpg" />
+                    </div>
+                    <div class="item fren">
+                        <img src="~/assets-forza1/images/indir.jpg" />
+                    </div>
+                    <div class="item fren">
+                        <img src="~/assets-forza1/images/osaka1.jpg" />
+                    </div>
+
+
+                    <div class="item fren">
+                        <img src="~/assets-forza1/images/zegen.png" />
+                    </div>
+
+                    <div class="item onTakimSuspansiyon">
+                        <img src="~/assets-forza1/images/logo-purflux.png" />
+                    </div>
+                    <div class="item onTakimSuspansiyon">
+                        <img src="~/assets-forza1/images/osaka-logo.jpg" />
+                    </div>
+                    <div class="item onTakimSuspansiyon">
+                        <img src="~/assets-forza1/images/valeo-logo.png" />
+                    </div>
+                    <div class="item onTakimSuspansiyon">
+                        <img src="~/assets-forza1/images/VEKA-RENKLI-LOGO.png" />
+                    </div>
+
+                    <div class="item onTakimSuspansiyon fren">
+                        <img src="~/assets-forza1/images/zegen3.png" />
+                    </div>
+
+                    <div class="item sogutmaisitma motor kayisRulman">
+                        <img src="~/assets-forza1/images/gmb.png" />
+                    </div>
+
+                    <div class="item sogutmaisitma">
+                        <img src="~/assets-forza1/images/graf-logo.png" />
+                    </div>
+
+                    <div class="item kaucukAksam">
+                        <img src="~/assets-forza1/images/gros-logo.png" />
+                    </div>
+
+                    <div class="item atesleme">
+                        <img src="~/assets-forza1/images/ans-buji-logo.png" />
+                    </div>
+                    <div class="item atesleme">
+                        <img src="~/assets-forza1/images/bosch-logo.png" />
+                    </div>
+                    <div class="item filtre atesleme">
+                        <img src="~/assets-forza1/images/delphi-logo.png" />
+                    </div>
+                    <div class="item atesleme">
+                        <img src="~/assets-forza1/images/denso-logo.png" />
+                    </div>
+
+                    <div class="item atesleme">
+                        <img src="~/assets-forza1/images/motortec-logo.png" />
+                    </div>
+                    <div class="item atesleme">
+                        <img src="~/assets-forza1/images/ngk-logo.png" />
+                    </div>
+
+                    <div class="item motor kayisRulman atesleme fren">
+                        <img src="~/assets-forza1/images//zenon-logo.png" />
+                    </div>
+
+                    <div class="item motor">
+                        <img src="~/assets-forza1/images/estas.png" />
+                    </div>
+
+                    <div class="item motor">
+                        <img src="~/assets-forza1/images/motortec-logo.png" />
+                    </div>
+
+                    <div class="item motor">
+                        <img src="~/assets-forza1/images/sahin-motor-yakalari-logo.png" />
+                    </div>
+
+                    <div class="item motor">
+                        <img src="~/assets-forza1/images/victor-reinz-logo.png" />
+                    </div>
+
+
+                    <div class="item kayisRulman">
+                        <img src="~/assets-forza1/images/daycomfa-logo.png" />
+                    </div>
+                    <div class="item kayisRulman">
+                        <img src="~/assets-forza1/images/gates-logo-new.png" />
+                    </div>
+
+                    <div class="item kayisRulman">
+                        <img src="~/assets-forza1/images/snr-logo.png" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
