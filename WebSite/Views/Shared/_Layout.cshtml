@@ -1,38 +1,40 @@
 ﻿<!DOCTYPE html>
+@inject IPageService pageService
+@inject IPageService CompanyService
+
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - Forza_Otomotiv</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Forza_Otomotiv.styles.css" asp-append-version="true" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <title>FORZA OTOMOTİV</title>
-    <link rel="stylesheet" href="~/assets-forza1/js/bootstrap-4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/js/bootstrap-4.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:200i,300,300i,400,500,500i,600,600i,700,800,900">
-    <link rel="stylesheet" href="~/assets-forza1/css/style.css" asp-append-version="true">
-    <link rel="stylesheet" href="~/assets-forza1/css/settings.css">
-    <link rel="stylesheet" href="~/assets-forza1/css/layers.css">
-    <link rel="stylesheet" href="~/assets-forza1/css/navigation.css">
-    <link rel="stylesheet" href="~/assets-forza1/css/animated.css">
+    <link rel="stylesheet" href="~/assets/css/style.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/assets/css/settings.css">
+    <link rel="stylesheet" href="~/assets/css/layers.css">
+    <link rel="stylesheet" href="~/assets/css/navigation.css">
+    <link rel="stylesheet" href="~/assets/css/animated.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <script type="text/javascript" src="~/assets-forza1/js/jquery/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="~/assets-forza1/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="~/assets-forza1/js/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript" src="~/assets-forza1/js/slider.js"></script>
-    <script type="text/javascript" src="~/assets-forza1/js/custom.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/slider.js"></script>
+    <script type="text/javascript" src="~/assets/js/custom.js"></script>
 
-    <script type="text/javascript" src="~/assets-forza1/js/extensions/revolution.extension.actions.min.js"></script>
-    <script type="text/javascript" src="~/assets-forza1/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script type="text/javascript" src="~/assets-forza1/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript" src="~/assets-forza1/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="~/assets-forza1/js/extensions/revolution.extension.migration.min.js"></script>
-    <script type="text/javascript" src="~/assets-forza1/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="~/assets-forza1/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script type="text/javascript" src="~/assets-forza1/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="~/assets-forza1/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.video.min.js"></script>
     <script>
         jQuery(document).ready(function ($) {
             $('.counter .item .number p').counterUp({
@@ -43,118 +45,51 @@
     </script>
 </head>
 <body>
-    <header>
-        <div class="header-top">
-            <div class="container">
-
-                <div class="social-icon">
-                    <a href="https://www.facebook.com/people/Forza-Otomotiv/100071898893175/?locale=tr_TR" target="_blank">
-                        <i class="zmdi zmdi-facebook"></i>
-                    </a>
-
-                </div>
+<header>
+    @await Component.InvokeAsync("LayoutLogoComponent")
+    @await Component.InvokeAsync("LayoutHeadComponent")
+    <p class="mobil-menu-open"><i class="zmdi zmdi-menu"></i> Menü</p>
+    <div class="mobile-menu" style="display: none;">
+        <a href="index-2.html">
+            <div class="mobile-logo">
+                <h1>FORZA OTOMOTİV</h1>
             </div>
-        </div>
-        <div class="header-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 col-12">
-                        <a href="../">
-                            <div class="logo">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-10 col-12">
-                        <ul class="nav menu custom-menu">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="../">Anasayfa</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="~/Page/Hakkimizda">Hakkımızda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="~/Page/Tedarikcilerimiz">Tedarikçilerimiz</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="~/Page/Iletisim">İletişim</a>
-                            </li>
-                       
-                            <li class="nav-item b2b-button">
-                                <a class="nav-link" href="https://b2b.forzaotomotiv.com.tr/Account/Login/?ReturnUrl=%2F" target="_blank">
-                                    B2B
-                                    Giriş
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <p class="mobil-menu-open"><i class="zmdi zmdi-menu"></i> Menü</p>
-        <div class="mobile-menu" style="display: none;">
-            <a href="index-2.html">
-                <div class="mobile-logo">
-                    <h1>FORZA OTOMOTİVV</h1>
-                </div>
-            </a>
-            <p class="mobile-menu-close"><i class="zmdi zmdi-close-circle-o"></i> Kapat</p>
-            <div class="menu-icerik">
-                <li><a href="~/">Anasayfa</a></li>
-                <li><a href="~/Home/Hakkımızda">Hakkımızda</a></li>
-                <li><a href="~/Home/Tedarikcilerimiz">Tedarikcilerimiz</a></li>
+        </a>
+        <p class="mobile-menu-close"><i class="zmdi zmdi-close-circle-o"></i> Kapat</p>
 
-                <li><a href="~/Home/İletisim">iletişim</a></li>
-                <li><a href="https://b2b.forzaotomotiv.com.tr/Account/Login/?ReturnUrl=%2F">B2B Giriş</a></li>
-            </div>
+        <div class="menu-icerik">
+            <li>
+                <a href="~/">Anasayfa</a>
+            </li>
+            @foreach (var item in await pageService.Sayfalar())
+            {
+                @if (item.Link != null && item.Link.Length > 5)
+                {
+                    <li>
+                        <a href="@item.Link">@item.Name</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/Page/Index?Id=@item.Id">@item.Name</a>
+                    </li>
+                }
+            }
+            <li>
+                <a href="https://b2b.forzaotomotiv.com.tr/Account/Login/?ReturnUrl=%2F">B2B Giriş</a>
+            </li>
         </div>
-    </header>
 
-    @RenderBody();
+    </div>
+</header>
 
-    <footer>
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="footer-logo"></div>
-                    </div>
-                    <div class="adres">
-                        <p><i class="zmdi zmdi-pin"></i>İvedik OSB. MAH. 1548. CAD. NO:52 Yenimahalle/Ankara</p>
-                    </div>
-                    <div class="telefon">
-                        <p><i class="zmdi zmdi-phone"></i> 0312 394 5252</p>
-                    </div>
-                    <div class="mail">
-                        <a href="#"><i class="zmdi zmdi-email"></i> info@forzaotomotiv.com</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-                        <div class="copyright">
-                            <p>
-                                Forza Otomotiv san.tic.ltd.şti
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="" target="_blank" title="Yazılım ve Teknoloji Hizmetleri | Adana Web Tasarım ve Yazılım"><div class="nano-logo"></div></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
-    <script src="~/assets-forza/js/popper.min.js"></script>
-    <script src="~/assets-forza/js/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
-    <script src="~/assets-forza/js/waypoints.min.js"></script>
-    <script src="~/assets-forza/js/jquery.counterup.min.js"></script>
+@RenderBody();
+
+
+@await Component.InvokeAsync("LayoutComponent")
+
+
+@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

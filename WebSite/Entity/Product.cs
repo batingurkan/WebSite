@@ -1,10 +1,13 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace WebSite.Entity;
 
 public class Product
 {
-    public int ProductID { get; set; }
-    public string ProductName { get; set; }
-    public string ProductDescription { get; set; }
-    public string ProductIMG { get; set; }
+    [Key]
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public string Image { get; set; }
     
 }

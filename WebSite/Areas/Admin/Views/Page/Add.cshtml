@@ -1,0 +1,38 @@
+@model Page
+
+@{
+    Layout = "_Layout";
+}
+
+
+<div>
+
+    <form method="post" action="../../Admin/Page/Add">
+
+        <div class="form-group">
+            <label asp-for="Name">Sayfa Adı</label>
+            <input type="text" class="form-control" asp-for="Name">
+            <br/>
+            <label asp-for="Title">Sayfa Başlık</label>
+            <input type="text" class="form-control" asp-for="Title">
+            <br/>
+            <label asp-for="Image">Sayfa Resimi</label>
+            <input type="text" class="form-control" asp-for="Image">
+            <br/>
+            <label asp-for="Description">Sayfa Açıklama</label>
+            <input type="text" class="form-control" asp-for="Description">
+            <br/>
+            <label asp-for="Link">Sayfa Linki</label>
+            <input type="text" class="form-control" asp-for="Link">
+            <br/>
+            <label asp-for="PageSortingIndex">Sayfa Sırası</label>
+            <input type="text" class="form-control" asp-for="PageSortingIndex">
+
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">Ekle</button>
+    </form>
+
+
+</div>

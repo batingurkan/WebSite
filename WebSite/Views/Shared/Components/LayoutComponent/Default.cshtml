@@ -1,0 +1,64 @@
+@model Company
+
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-logo"></div>
+                </div>
+
+                <div class="adres">
+                    <p>
+                        <i class="zmdi zmdi-pin"></i>@Html.DisplayFor(x => x.Adress)
+                    </p>
+                </div>
+                <div class="telefon">
+                    <p>
+                        <i class="zmdi zmdi-phone"></i>@Html.DisplayFor(x => x.Telephone)
+                    </p>
+                </div>
+                <div class="telefon">
+                    <p>
+                        <i class="zmdi zmdi-phone"></i>@Html.DisplayFor(x => x.Telephone2)
+                    </p>
+                </div>
+
+                <div class="mail">
+                    <a href="#">
+                        <i class="zmdi zmdi-email"></i>@Html.DisplayFor(x => x.Mail)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="copyright">
+                        <p>
+                            @Html.DisplayFor(x => x.Name)
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="" target="_blank" title="Yazılım ve Teknoloji Hizmetleri | Adana Web Tasarım ve Yazılım">
+                        <div class="nano-logo"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/assets/js/popper.min.js"></script>
+<script src="~/assets/js/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
+<script src="~/assets/js/waypoints.min.js"></script>
+<script src="~/assets/js/jquery.counterup.min.js"></script>
+
+

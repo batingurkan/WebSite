@@ -7,11 +7,10 @@ public class DataContext : DbContext
     {
         
     }
-    public DbSet<Sayfa> Sayfa { get; set; }
-    public DbSet<Admin> Admins { get; set; }
+    public DbSet<Page> Page { get; set; }
+    public DbSet<Admin> Admin { get; set; }
     public DbSet<Product> Products { get; set; }
-    public DbSet<Communication> Communications { get; set; }
-    public DbSet<About> Abouts { get; set; }
+    public DbSet<Company> Company { get; set; }
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

@@ -5,7 +5,8 @@ namespace WebSite.Entity;
 public class Admin
 {
     [Key]
-    public int AdminID { get; set; }
-    public string AdminName { get; set; }
-    public string AdminPassword { get; set; }
+    public int Id { get; set; }
+    public string Username { get; set; }
+    public string Password { get; set; }
+    public string IsActive { get; set; }
 }

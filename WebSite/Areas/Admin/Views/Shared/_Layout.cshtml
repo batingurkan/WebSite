@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/WebSite.styles.css" asp-append-version="true"/>
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <header>
@@ -25,6 +26,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="../../Admin/Page">Sayfalar</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="/Account/Logout/">Logout</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -38,12 +42,18 @@
 
 <footer class="border-top footer text-muted">
     <div class="container">
-        &copy; 2023 - WebSite - <a href="">Privacy</a>
+        &copy; 2023 - WebSite Project Development BG - <a href="">Privacy</a>
     </div>
 </footer>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+<script>
+   new FroalaEditor('textarea');
+ </script>
+
 @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
